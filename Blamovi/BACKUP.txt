@@ -1,0 +1,1636 @@
+
+               HOME HTML
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="home.css">
+    <title>Home</title>
+</head>
+
+<body>
+    <header>
+        <div class="posicionamento_header posicionamento">
+            <div class="logo">
+                <img src="../img/logo/logo-branco.svg" alt="logo">
+                <span>Blámovi</span>
+            </div>
+            <div id="divBusca">
+                <alt="Buscar..." />
+                <input type="text" id="txtBusca" placeholder="" />
+                <button id="btnBusca">Buscar</button>
+            </div>
+            <nav>
+                <a href="../Home/home.html">Home</a>
+                <a href="../Favoritos/favoritos.html">Favoritos</a>
+                <a href="">Cadastro</a>
+                <a href="../Login/login.html">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="banner">
+        </section>
+
+        <section class="destaque">
+            <div class="destaque_conteudo">
+                <img src="../img/section/film-everything-everywhere-all-at-once_ratio-16x9 1.svg" alt="">
+                <div>
+                    <h2>Tudo em Todo Lugar ao Mesmo Tempo</h2>
+                    <p>
+                        Ganhador de 10 Oscars, “Tudo em Todo Lugar Ao Mesmo Tempo” , filme dirigido por Daniel Scheinert
+                        e Daniel Kwan, acompanha a história de uma imigrante chinesa que com sua lavanderia à beira do
+                        fracasso e seu casamento com o marido covarde em ruínas, ela luta para lidar com tudo, incluindo
+                        um relacionamento ruim com seu pai crítico e sua filha.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="comentarios">
+            <div class="container">
+                <div class="container_conteudo">
+                    <img src="../img/banner/Group 72.png" alt="">
+                    <div>
+                        <h3>Leonardo Pereira</h3>
+                        <p>"O roteiro é tão bem estruturado que consegue construir, com sucesso diversos universos em
+                            apenas um filme"</p>
+                        <p>Nvl de critico na Blámovi</p>
+                    </div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="container_conteudo">
+                    <img src="../img/banner/320x400 1.png" alt="">
+                    <div>
+                        <h3>Ana Cristina </h3>
+                        <p>"Se tem uma coisa que eu aprecio na vida é quando um filme supera absurdamente as minhas
+                            expectativas. E foi o que aconteceu com Tudo em Todo Lugar ao Mesmo Tempo"</p>
+                        <p>Nvl de critico na Blámovi</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="Filmes_Destaques">
+            <h2>⭐ Filmes Favoritos</h2>
+            <div class="card-linha">
+                <img src="../img/elementos/Polygon 11.png" alt="">
+
+                <a href="../filmesinformacoes/filmes.html"></a>
+                <div class="card" id="teste3" >
+                    <img src="../img/filmes-f/batman-(cav-das-tre).webp" alt="">
+                    <h3>Batman: O Cavaleiro das Trevas</h3>
+
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/HBO-MAX.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="card" id="teste3">
+                    <img src="../img/filmes-f/joker.webp" alt="">
+                    <h3>Joker</h3>
+
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/HBO-MAX.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="card" id="teste3">
+                    <img src="../img/filmes-f/image 111.jpg" alt="">
+                    <h3>Vingadores: Ultimato</h3>
+                    
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/DISNEY.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="card" id="teste3">
+                    <img src="../img/filmes-f/gladiador.jpg" alt="">
+                    <h3>Gladiador</h3>
+                    
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/NETFLIX.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
+                    </div>
+                </div>
+                <img src="../img/elementos/Polygon 15.png" alt="">
+            </div>
+        </section>
+
+        <section class="Clássicos">
+            <h2>🎭 Clássicos</h2>
+            <div class="card-linha">
+                <img src="../img/elementos/Polygon 11.png" alt="">
+
+                <div class="card" id="teste3">
+                    <img src="../img/classicos/movies-the-lord-of-the-rings-aragorn-viggo-mortensen-movie-posters-posters-the-return-of-the-king-entertainment-movies-hd-art-wallpaper-preview.png"
+                        alt="">
+                    <h3>Senhor dos Anéis: A Sociedade do Anel</h3>
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/HBO-MAX.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="card" id="teste3">
+                    <img src="../img/classicos/20120876 1.png" alt="">
+                    <h3>O Poderoso Chefão</h3>
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/NETFLIX.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="card" id="teste3">
+                    <img src="../img/classicos/20-the-truman-show.png" alt="">
+                    <h3>O Show de Truman - O Show da Vida</h3>
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/amazon.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="card" id="teste3">
+                    <img src="../img/classicos/06-Alien.png" alt="">
+                    <h3>Alien - O 8.º Passageiro</h3>
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/star.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
+                    </div>
+                </div>
+                <img src="../img/elementos/Polygon 15.png" alt="">
+            </div>
+        </section>
+
+        <section class="Melhores_series">
+            <h2>🏆 Melhores series</h2>
+            <div class="card-linha">
+                <img src="../img/elementos/Polygon 11.png" alt="">
+                
+                <div class="card" id="teste3">
+                    <img src="../img/series-f/image 30.png" alt="">
+                    <h3>Treta</h3>
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/HBO-MAX.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="card" id="teste3">
+                    <img src="../img/series-f/The-last-of-us.jpg" alt="">
+                    <h3>The last of us</h3>
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/HBO-MAX.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="card" id="teste3">
+                    <img src="../img/series-f/mandalorian.jpg" alt="">
+                    <h3>Mandalorian</h3>
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/DISNEY.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="card" id="teste3">
+                    <img src="../img/series-f/image 108.png" alt="">
+                    <h3>Origem</h3>
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/NETFLIX.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
+                    </div>
+                </div>
+                <img src="../img/elementos/Polygon 15.png" alt="">
+            </div>
+        </section>
+
+        <section class="Para_maratonar">
+            <h2>🏃 Para Maratonar</h2>
+            <div class="card-linha">
+                <img src="../img/elementos/Polygon 11.png" alt="">
+                
+                <div class="card" id="teste3">
+                    <img src="../img/filmes-f/image 102.png" alt="">
+                    <h3>Rambo Programado para matar</h3>
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/youtube.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="card" id="teste3">
+                    <img src="../img/filmes-f/image 48.png" alt="">
+                    <h3>Rambo 2 A missão</h3>
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/youtube.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="card" id="teste3">
+                    <img src="../img/filmes-f/image 103.png" alt="">
+                    <h3>Rambo 3 </h3>
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/youtube.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="card" id="teste3">
+                    <img src="../img/filmes-f/image 104.png" alt="">
+                    <h3>Rambo 4</h3>
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/youtube.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
+                    </div>
+                </div>
+                <img src="../img/elementos/Polygon 15.png" alt="">
+            </div>
+        </section>
+
+        <section class="Lancamentos">
+            <h2>📅 Lançamentos</h2>
+            <div class="card-linha">
+                <img src="../img/elementos/Polygon 11.png" alt="">
+
+                <div class="card" id="teste3">
+                    <h2>01 Junho</h2>
+                    <img src="../img/filmes-f/image 84.png" alt="">
+                    <h3>Homem-Aranha: Através do Aranhaverso</h3>
+                    <a
+                        href="https://www.youtube.com/watch?v=_4is7I_ZxTg&pp=ygUtdHJhaWxlciBob21lbSBhcmFuaGEgYXRyYXbDqXMgZG8gYXJhbmhhdmVyc28g">Assistir
+                        ao trailer</a>
+                </div>
+
+                <div class="card" id="teste3">
+                    <h2>08 Junho</h2>
+                    <img src="../img/filmes-f/image 83.png" alt="">
+                    <h3>Transformers: O Despertar das Feras</h3>
+                    <a
+                        href="https://www.youtube.com/watch?v=PHC412-pCoQ&pp=ygUrdHJhaWxlciBUcmFuc2Zvcm1lcnM6IE8gRGVzcGVydGFyIGRhcyBGZXJhcw%3D%3D">Assistir
+                        ao trailer</a>
+                </div>
+
+                <div class="card" id="teste3">
+                    <h2>14 Junho</h2>
+                    <img src="../img/filmes-f/image 85.png" alt="">
+                    <h3>The Flash</h3>
+                    <a href="https://www.youtube.com/watch?v=xMbg-ZsFCCo&pp=ygURdHJhaWxlciBUaGUgRmxhc2g%3D">Assistir ao
+                        trailer</a>
+                </div>
+
+                <div class="card" id="teste3">
+                    <h2>28 Junho</h2>
+                    <img src="../img/filmes-f/black demon.png" alt="">
+                    <h3>Demônio dos mares</h3>
+                    <a href="https://www.youtube.com/watch?v=yX-pvjO4N3o&pp=ygUUTyBERU3DlE5JTyBET1MgTUFSRVM%3DD">Assistir
+                        ao trailer</a>
+                </div>
+                <img src="../img/elementos/Polygon 15.png" alt="">
+
+            </div>
+            <button type="submit" >+ Lançamentos</button>
+        </section>
+
+    </main>
+
+    <footer>
+        <img class="img-footer" src="../img/footer/cinema_foto_pexels 1 (2).svg" alt="">
+        <ul>          
+            <a href="../Home/home.html">Home</a>
+            <a href="../Login/login.html">Login</a>
+            <a href="">Pesquisar</a>
+            <a href="">Noticias</a>
+            <a href="../Favoritos/favoritos.html">Favoritos</a>
+            <a href="../filmesinformacoes/filmes.html">Informações</a>
+        </ul>
+        <div>
+            <div>
+                <img class="img-copy" src="../img/logo/logo-branco.svg" alt="">
+                <span>Blámovi</span>
+                <p>© 2023 by blamovi.com, Inc.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+
+
+                        HOME CSS
+
+
+* {
+    background-color: var(--preto);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+:root {
+    --preto: #000000;
+    --vermelho: #84141A;
+    --branco: #ffffff;
+    --azul: #0C1556;
+    --amarelo: #FBC02C;
+
+    --font1:'Archivo', sans-serif;
+    --font2: 'TTNorms-Regular.otf';
+}
+
+
+/* Cabeçalho */
+
+
+header {
+    background-color: var(--preto);
+    height: 70px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.posicionamento {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.posicionamento_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.posicionamento_header img {
+    width: 45px;
+}
+
+.posicionamento_header>span {
+    padding-left: 10px;
+}
+
+.logo>img{
+    color: var(--amarelo);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: var(--amarelo);
+    width: 20px;
+    height: 27px;
+}
+
+.logo>span{
+    color: var(--amarelo);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+}
+
+header a {
+    color: var(--amarelo);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: var(--font1);
+    font-size: 18px;
+}
+
+header a:hover{
+  color: var(--vermelho);
+}
+
+/* barra de pesquisa */
+
+
+#divBusca {
+    background-color: #E0EEEE;
+    border: solid 2px #fdf9f900;
+    border-radius: 10px;
+    width: 320px;
+    height: 31px;
+
+}
+
+#txtBusca {
+    float: left;
+    background-color: transparent;
+    padding-left: 5px;
+    font-size: 20px;
+    border: none;
+    height: 27px;
+    width: 243px;
+    border-radius: 8px;
+}
+
+#btnBusca {
+    border: none;
+    float: right;
+    height: 28px;
+    border-radius: 7px;
+    width: 70px;
+    font-weight: bold;
+    background: #FBC02C;
+    ;
+}
+
+#divBusca img {
+    float: left;
+}
+
+
+/* Banner principal */
+
+
+.banner {
+    background-image: url("../img/banner/Frame\ 9.svg");
+    height: 900px;
+
+}
+
+
+/* destaque */
+
+
+.destaque{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+
+
+.destaque_conteudo{
+    display: flex;
+    gap: 50px;
+    align-items: flex-end;
+}
+
+.destaque_conteudo img{
+    padding-left: 25px;
+   max-width: 650px;
+   width: 100%;
+}
+
+.destaque_conteudo h2{
+    font-family: var(--font1);
+    height: 190px;
+    font-size: 40px;
+    text-transform: uppercase;
+
+}
+
+.destaque p{
+    font-family: var(--font1);
+    color: var(--branco);
+    font-size: 18px;
+    padding-right: 40px;
+}
+
+
+/* comentarios */
+
+
+.comentarios{
+    display: flex;
+    background-color: #FBC02C;
+    width: auto;
+    height: 670px;
+    flex-direction: column;
+    padding: 0px 10px 10px;
+    margin-top: 5%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+}
+
+.container_conteudo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--amarelo);
+    
+}
+
+.container img{
+    max-width: 150px;
+    width: 50%;
+    background-color: var(--amarelo);
+}
+
+.container_conteudo div{
+    font-family: var(--font1);
+    text-align: center;
+    background-color: var(--amarelo);
+}
+
+.container h3{
+    color: var(--preto);
+    font-weight: 200;
+    font-size: 48px;
+    line-height: 52px;
+    background-color: var(--amarelo);
+}
+
+.container p{
+    color: var(--preto);
+    font-style: italic;
+    font-size: 25px;
+    line-height: 45px;
+    background-color: var(--amarelo);
+}
+
+
+
+/* texto */
+
+
+h2,
+h3 {
+    font-family: var(--font1);
+    color: var(--amarelo);
+    text-align: center;
+}
+
+h2 {
+    margin-top: 12%;
+    font-size: 50px;
+    height: 90px;
+}
+
+h3 {
+    color: var(--amarelo);
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+span {
+
+    color: var(--amarelo);
+    font-size: 25px;
+    text-align: center;
+}
+
+
+/* seção filmes e series  */
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    position:relative
+}
+
+
+#teste3{
+    position:relative;
+    top:0;
+    padding:4px;
+    transition: all .1s ease-in-out;
+}
+#teste3:hover{
+    top:-4px;
+    box-shadow:0 4px 3px rgba(0, 0, 0, 0.267);
+}
+
+.card-linha {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.card>img {
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    max-width: 90%;
+}
+
+.card>div {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.card>a{
+    color: #7DD7FE;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.card>a:hover{
+    color: var(--vermelho);
+}
+
+
+.itens{
+    width: 90%;
+    margin-top: 20px;
+}
+.streams{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+ }
+.icones{
+    display: flex;
+    flex-direction: inherit;
+    align-items: center;
+    gap: 10px;
+}
+
+.icones>img{
+    height: 25px;
+}
+
+.icones>span{
+    color: var(--branco);
+}
+
+button[type="submit"] {
+    margin-top: 5%;
+    display: flex;
+    width: 14%;
+    padding: 15px;
+    background-color: var(--amarelo);
+    color: var(--preto);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 43%;
+    font-size: 23px;
+
+    position:relative;
+    top:0;
+    transition: all .1s ease-in-out;
+}
+  
+button[type="submit"]:hover {
+    background-color: var(--branco);
+    top:-4px;
+    box-shadow:0 4px 3px rgba(0, 0, 0, 0.267);
+}
+
+/* footer */
+
+
+.img-footer {
+    margin-top: 200px;
+    width: 100%;
+    background-size: cover;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 66.67%, #000000 100%), url(cinema_foto_pexels.jpg);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.46);
+}
+
+
+ul {
+    color: var(--amarelo);
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: var(--font1);
+
+    position:relative;
+    top:0;
+    transition: all .1s ease-in-out;
+}
+
+ul>a {
+    text-decoration: none;
+    color: var(--amarelo);
+}
+
+ul>a:hover{
+    color: var(--vermelho);
+}
+
+
+footer>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--branco);
+    margin-top: 20px;
+}
+
+footer>div>span,p {
+    margin-top: 10px;
+    color: var(--amarelo);
+    text-align: center;
+}
+
+footer>div>img {
+    width: 20px;
+    height: 27px;
+}
+
+footer>div>span {
+    color: var(--amarelo);
+}
+
+
+
+                    Favoritos HTML
+
+
+                    <!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300&display=swap" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="favoritos.css">
+    <title>Favoritos</title>
+</head>
+
+<body>
+    <header>
+        <!-- <div class="carousel">
+            <div class="movie-cards"> -->
+              <!-- Os cards dos filmes serão adicionados aqui -->
+            <!-- </div>
+            <button class="prev-button">Anterior</button>
+            <button class="next-button">Próximo</button>
+          </div>
+        
+          <script src="script.js"></script> -->
+
+        <div class="posicionamento_header posicionamento">
+            <div class="logo">
+                <img src="../img/logo/logo-branco.svg" alt="logo">
+                <span>Blámovi</span>
+            </div>
+            <div id="divBusca">
+                <alt="Buscar..." />
+                <input type="text" id="txtBusca" placeholder="" />
+                <button id="btnBusca">Buscar</button>
+            </div>
+            <nav>
+                <a href="../Home/home.html">Home</a>
+                <a href="../Favoritos/favoritos.html">Favoritos</a>
+                <a href="../cadastroUsuario/cadastrousuario.html">Cadastro</a>
+                <a href="../Login/login.html">Login</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="fav-banner">
+        </section>
+
+        <section class="fav-filmes-favoritos">
+            <h2>❤ Filmes Favoritos</h2>
+            <div class="fav-card-linha">
+                <img src="../img/elementos/Polygon 11.png" alt="">
+
+                <div class="fav-card" id="teste3">
+                    <img src="../img/filmes-f/batman-(cav-das-tre).webp" alt="">
+                    <h3>Batman: O Cavaleiro das Trevas</h3>
+
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/HBO-MAX.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="fav-card" id="teste3">
+                    <img src="../img/filmes-f/joker.webp" alt="">
+                    <h3>Joker</h3>
+
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/HBO-MAX.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="fav-card" id="teste3">
+                    <img src="../img/filmes-f/image 111.jpg" alt="">
+                    <h3>Vingadores: Ultimato</h3>
+
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/DISNEY.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="fav-card" id="teste3">
+                    <img src="../img/filmes-f/gladiador.jpg" alt="">
+                    <h3>Gladiador</h3>
+
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/NETFLIX.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
+                    </div>
+                </div>
+
+                <img src="../img/elementos/Polygon 15.png" alt="">
+            </div>
+        </section>
+
+
+        <section class="fav-series-favoritos">
+            <h2>❤ Series Favoritos</h2>
+            <div class="fav-card-linha">
+                <img src="../img/elementos/Polygon 11.png" alt="">
+                <div class="fav-card" id="teste3">
+                    <img src="../img/series-f/mandalorian.jpg" alt="">
+                    <h3>mandalorian</h3>
+
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/HBO-MAX.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
+                    </div>
+                </div>
+
+                <div class="fav-card" id="teste3">
+                    <img src="../img/series-f/A-casa-dos-dragões.jpg" alt="">
+                    <h3>A Casa dos Dragões</h3>
+
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/HBO-MAX.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
+                    </div>
+
+                </div>
+
+                <div class="fav-card" id="teste3">
+                    <img src="../img/series-f/Wandinha.webp" alt="">
+                    <h3>Wandinha</h3>
+
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/DISNEY.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
+                    </div>
+                
+                </div>
+
+                <div class="fav-card" id="teste3">
+                    <img src="../img/series-f/The-last-of-us.jpg" alt="">
+                    <h3>the last of us</h3>
+                    
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/HBO-MAX.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
+                    </div>
+
+                </div>
+                <img src="../img/elementos/Polygon 15.png" alt="">
+            </div>
+        </section>
+
+    </main>
+    
+    <footer>
+        <img class="img-footer" src="../img/footer/cinema_foto_pexels 1 (2).svg" alt="">
+        <ul>          
+            <a href="../Home/home.html">Home</a>
+            <a href="../Login/login.html">Login</a>
+            <a href="">Pesquisar</a>
+            <a href="">Noticias</a>
+            <a href="../Favoritos/favoritos.html">Favoritos</a>
+            <a href="../filmesinformacoes/filmes.html">Informações</a>
+        </ul>
+        <div>
+            <div>
+                <img class="img-copy" src="../img/logo/logo-branco.svg" alt="">
+                <span>Blámovi</span>
+                <p>© 2023 by blamovi.com, Inc.</p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
+
+
+
+                Favoritos CSS
+
+
+
+* {
+    background-color: var(--preto);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-size: cover;
+}
+
+:root {
+    --preto: #000000;
+    --vermelho: #84141A;
+    --branco: #ffffff;
+    --azul: #0C1556;
+    --amarelo: #FBC02C;
+
+    --font1:'Archivo', sans-serif;
+    --font2: 'TTNorms-Regular.otf';
+}
+
+
+/* Cabeçalho */
+
+
+header {
+    background-color: var(--preto);
+    height: 70px;
+    padding: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.posicionamento {
+    width: 1400px;
+    margin: 0 auto;
+}
+
+.posicionamento_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.posicionamento_header img {
+    width: 45px;
+}
+
+.posicionamento_header>span {
+    padding-left: 10px;
+}
+
+.logo>img{
+    color: var(--amarelo);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    color: var(--amarelo);
+    width: 20px;
+    height: 27px;
+}
+
+.logo>span{
+    color: var(--amarelo);
+}
+
+header nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 450px;
+}
+
+header a {
+    color: var(--amarelo);
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: var(--font1);
+    font-size: 18px;
+}
+
+header a:hover{
+  color: var(--vermelho);
+}
+
+
+/* barra de pesquisa */
+
+
+#divBusca {
+    background-color: #E0EEEE;
+    border: solid 2px #fdf9f900;
+    border-radius: 10px;
+    width: 320px;
+    height: 31px;
+
+}
+
+#txtBusca {
+    float: left;
+    background-color: transparent;
+    padding-left: 5px;
+    font-size: 20px;
+    border: none;
+    height: 27px;
+    width: 243px;
+    border-radius: 8px;
+}
+
+#btnBusca {
+    border: none;
+    float: right;
+    height: 28px;
+    border-radius: 7px;
+    width: 70px;
+    font-weight: bold;
+    background: #FBC02C;
+    ;
+}
+
+#divBusca img {
+    float: left;
+}
+
+
+/* Banner principal */
+
+
+.banner {
+    background-image: url("../img/banner/Frame\ 9.svg");
+    height: 900px;
+
+}
+
+
+/* destaque */
+
+
+.destaque{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5%;
+}
+
+
+
+.destaque_conteudo{
+    display: flex;
+    gap: 50px;
+    align-items: flex-end;
+}
+
+.destaque_conteudo img{
+    padding-left: 25px;
+   max-width: 650px;
+   width: 100%;
+}
+
+.destaque_conteudo h2{
+    font-family: var(--font1);
+    height: 190px;
+    font-size: 40px;
+    text-transform: uppercase;
+
+}
+
+.destaque p{
+    font-family: var(--font1);
+    color: var(--branco);
+    font-size: 18px;
+    padding-right: 40px;
+}
+
+
+/* comentarios */
+
+
+.comentarios{
+    display: flex;
+    background-color: #FBC02C;
+    width: auto;
+    height: 670px;
+    flex-direction: column;
+    padding: 0px 10px 10px;
+    margin-top: 5%;
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+    width: 90%;
+}
+
+.container_conteudo{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--amarelo);
+    
+}
+
+.container img{
+    max-width: 150px;
+    width: 50%;
+    background-color: var(--amarelo);
+}
+
+.container_conteudo div{
+    font-family: var(--font1);
+    text-align: center;
+    background-color: var(--amarelo);
+}
+
+.container h3{
+    color: var(--preto);
+    font-weight: 200;
+    font-size: 48px;
+    line-height: 52px;
+    background-color: var(--amarelo);
+}
+
+.container p{
+    color: var(--preto);
+    font-style: italic;
+    font-size: 25px;
+    line-height: 45px;
+    background-color: var(--amarelo);
+}
+
+
+
+/* texto */
+
+
+h2,
+h3 {
+    font-family: var(--font1);
+    color: var(--amarelo);
+    text-align: center;
+}
+
+h2 {
+    margin-top: 12%;
+    font-size: 50px;
+    height: 90px;
+}
+
+h3 {
+    color: var(--amarelo);
+    font-size: 20px;
+    margin-top: 20px;
+}
+
+span {
+
+    color: var(--amarelo);
+    font-size: 25px;
+    text-align: center;
+}
+
+
+/* seção filmes e series  */
+
+
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    position:relative
+}
+
+
+#teste3{
+    position:relative;
+    top:0;
+    padding:4px;
+    transition: all .1s ease-in-out;
+}
+#teste3:hover{
+    top:-4px;
+    box-shadow:0 4px 3px rgba(0, 0, 0, 0.267);
+}
+
+.card-linha {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: auto;
+}
+
+.card>img {
+    height: 400px;
+    width: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    max-width: 90%;
+}
+
+.card>div {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row;
+    gap: 40px;
+}
+
+.card>a{
+    color: #7DD7FE;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.card>a:hover{
+    color: var(--vermelho);
+}
+
+
+.itens{
+    width: 90%;
+    margin-top: 20px;
+}
+.streams{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+ }
+.icones{
+    display: flex;
+    flex-direction: inherit;
+    align-items: center;
+    gap: 10px;
+}
+
+.icones>img{
+    height: 25px;
+}
+
+.icones>span{
+    color: var(--branco);
+}
+
+button[type="submit"] {
+    margin-top: 5%;
+    display: flex;
+    width: 14%;
+    padding: 15px;
+    background-color: var(--amarelo);
+    color: var(--preto);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 43%;
+    font-size: 23px;
+
+    position:relative;
+    top:0;
+    transition: all .1s ease-in-out;
+}
+  
+button[type="submit"]:hover {
+    background-color: var(--branco);
+    top:-4px;
+    box-shadow:0 4px 3px rgba(0, 0, 0, 0.267);
+}
+
+/* footer */
+
+
+.img-footer {
+    margin-top: 200px;
+    width: 100%;
+    background-size: cover;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 66.67%, #000000 100%), url(cinema_foto_pexels.jpg);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.46);
+}
+
+
+ul {
+    color: var(--amarelo);
+    display: flex;
+    justify-content: space-evenly;
+    text-align: center;
+    font-family: var(--font1);
+
+    position:relative;
+    top:0;
+    transition: all .1s ease-in-out;
+}
+
+ul>a {
+    text-decoration: none;
+    color: var(--amarelo);
+}
+
+ul>a:hover{
+    color: var(--vermelho);
+}
+
+
+footer>div {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    color: var(--branco);
+    margin-top: 20px;
+}
+
+footer>div>span,p {
+    margin-top: 10px;
+    color: var(--amarelo);
+    text-align: center;
+}
+
+footer>div>img {
+    width: 20px;
+    height: 27px;
+}
+
+footer>div>span {
+    color: var(--amarelo);
+}
+
+
+                LOGIN HTML
+
+
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="import" href="../img/fonts-txt/Helvetica-Fonts/helvetica-compressed-5871d14b6903a.otf">
+    <link rel="import" href="../img/fonts-txt/TT-Norms-Fonts/TTNorms-Regular.otf">
+
+    <link rel="stylesheet" href="login.css">
+    <title>Login</title>
+</head>
+
+<body>
+    <header>
+        <div class="posicionamento_header posicionamento">
+            <div class="logo">
+                <img src="../img/logo/logo-branco.svg" alt="logo">
+                <span>Blámovi</span>
+            </div>
+            <div id="divBusca">
+                <alt="Buscar..." />
+                <input type="text" id="txtBusca" placeholder="" />
+                <button id="btnBusca">Buscar</button>
+            </div>
+            <nav>
+                <a href="../Home/home.html">Home</a>                
+                <a href="../cadastroUsuario/cadastrousuario.html">Cadastro</a>
+                <a href="../Login/login.html">Login</a>
+            </nav>
+        </div>
+    </header>
+
+
+    <main>
+        <section>
+            <div>            
+                <div class="login-container">
+                    <h2>Login</h2>
+                    <form>
+                        <input type="text" placeholder="Usuário" required="">
+        
+                        <input type="password" placeholder="Senha" required="">
+                        
+                        <p>Esqueçeu sua senha ?<a href="">Aqui</a></p>
+        
+                        <button type="submit">Entrar</button>
+                    </form>
+                    <p>Não tem conta ? <a href="">Cadastrar-se agora</a></p>               
+                    <div class="icon">
+                        <img src="../img/redes/Facebook F.svg" alt="">
+                        <img src="../img/redes/Google.svg" alt="">
+                        <img src="../img/redes/Twitter.svg" alt="">
+                        <img src="../img/redes/YouTube.svg" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <ul>
+            <li>Home</li>
+            <li>Login</li>
+            <li>Pesquisar</li>
+            <li>Noticias</li>
+            <li>Favoritos</li>
+            <li>Informações</li>
+        </ul>
+    </footer>
+</body>
+
+</html>
+
+
+
+
+
+                LOGIN CSS
+
+
+
+
+

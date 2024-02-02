@@ -6,10 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="import" href="../img/fonts-txt/Helvetica-Fonts/helvetica-compressed-5871d14b6903a.otf">
-    <link rel="import" href="../img/fonts-txt/TT-Norms-Fonts/TTNorms-Regular.otf">
-    <link href="https://fonts.googleapis.com/css2?family=Kosugi+Maru&family=Nova+Flat&family=Poppins:wght@200;300;400;600;900&display=swap"
-        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@300&display=swap" rel="stylesheet">
+
 
     <link rel="stylesheet" href="favoritos.css">
     <title>Favoritos</title>
@@ -17,17 +16,7 @@
 
 <body>
     <header>
-        <!-- <div class="carousel">
-            <div class="movie-cards"> -->
-              <!-- Os cards dos filmes serão adicionados aqui -->
-            <!-- </div>
-            <button class="prev-button">Anterior</button>
-            <button class="next-button">Próximo</button>
-          </div>
-        
-          <script src="script.js"></script> -->
-
-        <div class="posicionamento_header posicionamento">
+          <div class="posicionamento_header posicionamento">
             <div class="logo">
                 <img src="../img/logo/logo-branco.svg" alt="logo">
                 <span>Blámovi</span>
@@ -37,58 +26,107 @@
                 <input type="text" id="txtBusca" placeholder="" />
                 <button id="btnBusca">Buscar</button>
             </div>
-            <nav>
-                <a href="../Home/home.html">Home</a>
+            <a id="menu_barras" aria-label="abrir menu" aria-controls="menu_links" aria-expanded="false" aria-haspopup="true" class="menu_barras" href="#" onclick="mostrarMenu()">
+                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><!--! Font Awesome Pro 6.4.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. --><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+            </a>
+            <nav id="menu_links">
+                <a href="../Home/home.html" style="animation-delay: 0.2s;">Home</a>
                 <a href="../Favoritos/favoritos.html">Favoritos</a>
-                <a href="">Cadastro</a>
+                <a href="../Cadastro/cadastro.html">Cadastro</a>
                 <a href="../Login/login.html">Login</a>
             </nav>
         </div>
     </header>
 
     <main>
-        <section class="fav-banner">
-        </section>
+        
+        <section class="fav_banner">
 
+            <div class="fav_banner_img">
+                <img src="../img/banner/Vector.jpg" alt="">
+            </div>
+            
+            <div class="fav_banner_texto">
+                <p>Não sabe o que Assistir?</p>
+                <img src="../img/banner/logo.svg" alt="">
+                <p>A <span>Blámovi</span> te recomenda!</p>
+            </div>
+
+        </section>
+        
         <section class="fav-filmes-favoritos">
             <h2>❤ Filmes Favoritos</h2>
             <div class="fav-card-linha">
                 <img src="../img/elementos/Polygon 11.png" alt="">
-                <div class="fav-card">
+
+                <div class="fav-card" id="teste3">
                     <img src="../img/filmes-f/batman-(cav-das-tre).webp" alt="">
                     <h3>Batman: O Cavaleiro das Trevas</h3>
-                    <div>
-                        
-                        <img src="../img/streams/HBO-MAX.png" alt="">
+
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/HBO-MAX.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
                     </div>
                 </div>
 
-                <div class="fav-card">
+                <div class="fav-card" id="teste3">
                     <img src="../img/filmes-f/joker.webp" alt="">
                     <h3>Joker</h3>
-                    <div>
-                       
-                        <img src="../img/streams/HBO-MAX.png" alt="">
+
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/HBO-MAX.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
                     </div>
                 </div>
 
-                <div class="fav-card">
+                <div class="fav-card" id="teste3">
                     <img src="../img/filmes-f/image 111.jpg" alt="">
                     <h3>Vingadores: Ultimato</h3>
-                    <div>
-                        
-                        <img src="../img/streams/DISNEY.png" alt="">
+
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/DISNEY.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
                     </div>
                 </div>
 
-                <div class="fav-card">
+                <div class="fav-card" id="teste3">
                     <img src="../img/filmes-f/gladiador.jpg" alt="">
                     <h3>Gladiador</h3>
-                    <div>
-                        
-                        <img src="../img/streams/NETFLIX.png" alt="">
+
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/NETFLIX.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
                     </div>
                 </div>
+
                 <img src="../img/elementos/Polygon 15.png" alt="">
             </div>
         </section>
@@ -98,55 +136,91 @@
             <h2>❤ Series Favoritos</h2>
             <div class="fav-card-linha">
                 <img src="../img/elementos/Polygon 11.png" alt="">
-                <div class="fav-card">
+                <div class="fav-card" id="teste3">
                     <img src="../img/series-f/mandalorian.jpg" alt="">
                     <h3>mandalorian</h3>
-                    <div>
-                       
-                        <img src="../img/streams/DISNEY.png" alt="">
+
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/HBO-MAX.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
                     </div>
                 </div>
 
-                <div class="fav-card">
+                <div class="fav-card" id="teste3">
                     <img src="../img/series-f/A-casa-dos-dragões.jpg" alt="">
                     <h3>A Casa dos Dragões</h3>
-                    <div>
-                        
-                        <img src="../img/streams/HBO-MAX.png" alt="">
+
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/HBO-MAX.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
                     </div>
+
                 </div>
 
-                <div class="fav-card">
+                <div class="fav-card" id="teste3">
                     <img src="../img/series-f/Wandinha.webp" alt="">
                     <h3>Wandinha</h3>
-                    <div>
-                       
-                        <img src="../img/streams/DISNEY.png" alt="">
+
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/DISNEY.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
                     </div>
+                
                 </div>
 
-                <div class="fav-card">
+                <div class="fav-card" id="teste3">
                     <img src="../img/series-f/The-last-of-us.jpg" alt="">
                     <h3>the last of us</h3>
-                    <div>
                     
-                        <img src="../img/streams/HBO-MAX.png" alt="">
+                    <div class="itens">
+                        <div class="streams">
+                            <img src="../img/streams/HBO-MAX.png" alt="">
+                        </div>   
+                        <div class="icones">
+                            <img src="../img/elementos/Trophy.png" alt="">
+                            <span>8,8</span> 
+                            <img src="../img/elementos/Talk.png" alt="">
+                            <span>59</span>
+                        </div>                        
                     </div>
+
                 </div>
                 <img src="../img/elementos/Polygon 15.png" alt="">
             </div>
         </section>
 
     </main>
+    
     <footer>
-        <img class="img-footer" src="../img/footer/cinema_foto_pexels 1 (2).svg" alt="">
-        <ul>
-            <li>Home</li>
-            <li>Login</li>
-            <li>Pesquisar</li>
-            <li>Noticias</li>
-            <li>Favoritos</li>
-            <li>Informações</li>
+        <img class="img-footer" src="../img/footer/cinema_foto_pexels 1 (1).png" alt="">
+        <ul>          
+            <a href="../Home/home.html">Home</a>
+            <a href="../Login/login.html">Login</a>
+            <a href="">Pesquisar</a>
+            <a href="../calendario/calendario.html">Calendario</a>
+            <a href="../Favoritos/favoritos.html">Favoritos</a>
+            <a href="../filmesinformacoes/filmes.html">Informações</a>
         </ul>
         <div>
             <div>

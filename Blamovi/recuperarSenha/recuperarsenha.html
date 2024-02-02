@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BlaMovi</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="shortcut icon" href="../img/img/favicon2.svg" type="image;x-icon">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Titillium+Web:wght@600&display=swap"
+    rel="stylesheet">
+  <link rel="stylesheet" href="recuperarsenha.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Righteous&family=Titillium+Web:wght@600&display=swap"
+    rel="stylesheet">
+
+</head>
+
+<body>
+  
+  <header>
+    <div class="posicionamento_header posicionamento">
+
+      <img class="logo_ver" src="../Cadastro/imagens/logoo_1.svg" alt="">
+  
+      <div id="divBusca">
+        <input type="text" id="txtBusca" placeholder="..." />
+        <button id="btnBusca">Buscar</button>
+      </div>
+      <a id="menu_barras" aria-label="abrir menu" aria-controls="menu_links" aria-expanded="false" aria-haspopup="true" class="menu_barras" href="#" onclick="mostrarMenu()">
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z"/></svg>
+      </a>
+      <nav id="menu_links">
+        <a href="../Home/home.html">Home</a>
+        <a href="../Favoritos/favoritos.html">Favoritos</a>
+        <a href="../Cadastro/cadastro.html">Cadastro</a>
+        <a href="../Login/login.html">Login</a>
+      </nav>
+    </div>
+  </header>
+  <main class="banner">
+    <div class="container">
+      <a class="links" id="paracadastro"></a>
+      <a class="links" id="paralogin"></a>
+
+      <div class="content">
+        <!--FORMULÁRIO DE CADASTRO-->
+        <div id="cadastro">
+          <form method="post" action="">
+            <h1>Recuperar senha</h1>
+
+            <div class="input">
+              <img class="form-label" src="../Cadastro/imagens/Group Message.png">
+              <div class="input-email">
+                <label for="email_cad">E-mail</label>
+                <input id="email_cad" name="email_cad" required="required" type="email" />
+              </div>
+            </div>
+
+            <div class="input">
+              <img class="form-label" src="../Cadastro/imagens/Lock.png">
+              <div class="input-senha">
+                <label for="senha_cad">Nova senha</label>
+                <input id="senha_cad" name="senha_cad" required="required" type="password" />
+              </div>
+            </div>
+
+            <div class="input">
+              <img class="form-label" src="../Cadastro/imagens/Lock.png">
+              <div class="input-conf-senha">
+
+                <label for="confirma-senha">Confirmar Senha</label>
+                <input id="confirma-senha" name="confirma-senha" required="required" type="password" />
+              </div>
+            </div>
+
+            <div class="input-submit">
+              <a href="../Login/login.html">Enviar</a>
+            </div>
+
+          </form>
+        </div>
+      </div>
+    </div>
+
+  </main>
+  <footer>
+    <ul>          
+        <a href="../Home/home.html">Home</a>
+        <a href="../Login/login.html">Login</a>
+        <a href="">Pesquisar</a>
+        <a href="../calendario/calendario.html">Calendario</a>
+        <a href="../Favoritos/favoritos.html">Favoritos</a>
+        <a href="../filmesinformacoes/filmes.html">Informações</a>
+    </ul>
+  </footer>
+
+</body>
+
+
+</html>

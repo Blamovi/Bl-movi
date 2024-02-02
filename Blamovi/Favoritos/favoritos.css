@@ -14,12 +14,12 @@
     --azul: #0C1556;
     --amarelo: #FBC02C;
 
-    --font1: 'helvetica-compressed-5871d14b6903a.otf';
+    --font1:'Archivo', sans-serif;
     --font2: 'TTNorms-Regular.otf';
 }
 
-
 /* Cabeçalho */
+
 header {
     background-color: var(--preto);
     height: 70px;
@@ -41,8 +41,7 @@ header {
 }
 
 .posicionamento_header img {
-    width: 35px;
-    height: 28px;
+    width: 45px;
 }
 
 .posicionamento_header>span {
@@ -55,10 +54,14 @@ header {
     color: var(--branco);
     width: 20px;
     height: 27px;
+    gap: 5px;
+}
+
+.menu_barras {
+    display: none;
 }
 
 header nav {
-    /* background-color: brown; */
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -71,6 +74,10 @@ header a {
     text-decoration: none;
     font-family: var(--font1);
     font-size: 18px;
+}
+
+header a:hover{
+    color: var(--vermelho);
 }
 
 /* barra de pesquisa */
@@ -103,75 +110,59 @@ header a {
     width: 70px;
     font-weight: bold;
     background: #FBC02C;
-    ;
+
 }
 
 #divBusca img {
     float: left;
 }
 
-.carousel {
+/* banner favoritos */
+
+.fav_banner{
+    display: flex;
     width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .movie-cards {
-    display: flex;
-    overflow: hidden;
-  }
-  
-  .movie-card {
-    width: 300px;
-    height: 400px;
-    margin-right: 10px;
-    background-color: #f0f0f0;
-    /* Outros estilos dos cards */
-  }
-  
-  .prev-button,
-  .next-button {
-    margin-top: 10px;
-    /* Outros estilos dos botões */
-  }
+}
 
+.fav_banner_img {
+    height: 660px;
+}
 
-/* Banner principal */
-.fav-banner {
-    background-image: url("../img/banner/Frame\ 9.svg");
-    height: calc(153vh - 103px);
-    background-size: cover;
+.fav_banner_texto p{
     color: var(--branco);
-    font-family: var(--font1);
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    font-size: 50px;
 }
 
-.fav-banner>div>img {
-    height: calc(100vh - 80px);
-    background-size: cover;
-    position: absolute;
+.fav_banner_texto span{
+    font-size: 50px;
 }
+
+.fav_banner_texto img{
+    width: 90%;
+    padding: 10%;
+}
+
+
+/* texto */
+
 
 h2,
 h3 {
-    font-family: var(--font2);
+    font-family: var(--font1);
     color: var(--amarelo);
     text-align: center;
 }
 
 h2 {
-    margin-top: 200px;
+    margin-top: 8%;
     font-size: 50px;
-    height: 200px;
+    height: 90px;
 }
 
 h3 {
     color: var(--amarelo);
-    padding: 28px;
     font-size: 20px;
+    margin-top: 20px;
 }
 
 span {
@@ -186,31 +177,112 @@ span {
 
 .fav-card-linha {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    padding: 0 20px 20px 0;
+    margin: auto;
+}
+
+.fav-card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: nowrap;
+    position:relative;
 }
 
 .fav-card>img {
-    height: 470px;
-    width: 320px;
+    height: 400px;
+    width: 300px;
     object-fit: cover;
     border-radius: 10px;
+    max-width: 90%;
 }
 
 .fav-card>div {
     display: flex;
-    justify-content: space-evenly;
     align-items: flex-end;
+    flex-direction: row;
+    gap: 40px;
 }
+
+.fav-card>a{
+    color: #7DD7FE;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.fav-card>a:hover{
+    color: var(--vermelho);
+}
+
+button[type="submit"] {
+    margin-top: 5%;
+    display: flex;
+    width: 12.4%;
+    padding: 15px;
+    background-color: var(--amarelo);
+    color: var(--preto);
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    margin-left: 43%;
+    font-size: 23px;
+
+    position:relative;
+    top:0;
+    transition: all .1s ease-in-out;
+}
+  
+button[type="submit"]:hover {
+    background-color: var(--branco);
+    top:-4px;
+    box-shadow:0 4px 3px rgba(0, 0, 0, 0.267);
+}
+
+#teste3{
+    position:relative;
+    top:0;
+    padding:4px;
+    transition: all .1s ease-in-out;
+}
+#teste3:hover{
+    top:-4px;
+    box-shadow:0 4px 3px rgba(0, 0, 0, 0.267);
+}
+
+.itens{
+    width: 90%;
+    margin-top: 20px;
+}
+ .streams{
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-around;
+ }
+ .icones{
+    display: flex;
+    flex-direction: inherit;
+    align-items: center;
+    gap: 15px;
+ }
+
+ 
+.icones>img{
+    height: 25px;
+}
+
+.icones>span{
+    color: var(--branco);
+}
+
 
 
 
 /* footer */
 
-
-.fav-img-footer {
-    margin-top: 200px;
+.img-footer {
+    margin-top: 0;
     width: 100%;
     background-size: cover;
     background: linear-gradient(180deg, rgba(0, 0, 0, 0) 66.67%, #000000 100%), url(cinema_foto_pexels.jpg);
@@ -222,6 +294,20 @@ ul {
     display: flex;
     justify-content: space-evenly;
     text-align: center;
+    font-family: var(--font1);
+
+    position: relative;
+    top: 0;
+    transition: all .1s ease-in-out;
+}
+
+ul>a {
+    text-decoration: none;
+    color: var(--amarelo);
+}
+
+ul>a:hover {
+    color: var(--vermelho);
 }
 
 footer>div {
@@ -229,8 +315,11 @@ footer>div {
     align-items: center;
     justify-content: space-evenly;
     color: var(--branco);
+    margin-top: 20px;
 }
-footer>div>span,p{
+
+footer>div>span,
+p {
     margin-top: 10px;
     color: var(--amarelo);
     text-align: center;
@@ -239,4 +328,82 @@ footer>div>span,p{
 footer>div>img {
     width: 20px;
     height: 27px;
+}
+
+footer>div>span {
+    color: var(--amarelo);
+}
+
+/*  RESPONSIVO */
+
+
+@media screen and (max-width: 1200px) {
+    .servicos>div>div:nth-child(2) {
+        margin-top: 100px;
+    }
+
+
+    .menu_barras {
+        display: initial;
+    }
+
+    .menu_barras svg {
+        height: 50px;
+        fill: var(--branco);
+    }
+
+    .posicionamento_header {
+        position: relative;
+    }
+
+    .posicionamento_header nav {
+        display: none;
+        position: absolute;
+        right: 0;
+        top: 80px;
+        background-color: #060821c3;
+        flex-direction: column;
+        z-index: 1;
+        padding: 50px 0;
+        backdrop-filter: blur(10px);
+        border-radius: 50px;
+        border: 1px solid rgba(255, 255, 255, 0.8);
+    }
+
+    header nav a {
+        margin: 15px 0;
+    }
+
+    .fav-banner{
+        height: 773px;
+    }
+}
+
+
+
+
+
+
+
+@media screen and (max-width: 895px) {
+    .servicos>div>div:nth-child(2) {
+        margin-top: 100px;
+    }
+}
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 768px) {
+    .servicos>div>div:nth-child(2) {
+        margin-top: 100px;
+    }
+
+
+
 }
