@@ -17,17 +17,22 @@ public class VideoModel implements Serializable {
 
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
-    @Column(name = "idVideo", nullable = false)
+    @Column(name = "id_video", nullable = false)
     private int id;
+
     private String titulo;
     private String genero;
     private String diretor;
     private String duracao;
-    private String temporadas;
+    private int temporadas;
     private String sinopse;
     private String ano;
-    private String curtida;
-    private String nota;
+    private int curtida;
     private String elenco;
     private String tipo;
+    private String poter;
+    private String treiler;
+    private String classificacao;
+    private float nota_total;
+    private int quantidade_post;
 }
