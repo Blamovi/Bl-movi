@@ -1,10 +1,10 @@
-package com.blamovi.apiblamovi;
+package com.blamovi.apiBlamovi;
 
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
 @SpringBootTest
-class ApiblamoviApplicationTests {
+class ApiBlamoviApplicationTests {
 
 	@Test
 	void contextLoads() {

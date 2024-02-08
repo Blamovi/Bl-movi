@@ -1,4 +1,4 @@
-package com.blamovi.apiblamovi.models;
+package com.blamovi.apiBlamovi.models;
 
 import jakarta.persistence.*;
 import lombok.Getter;
@@ -19,9 +19,15 @@ public class ComentarioModel implements Serializable {
     @Id
     @GeneratedValue(strategy = GenerationType.AUTO)
     @Column(name = "id_comentario", nullable = false)
-    private int id;
+    private UUID id;
 
-    private UUID id_usuario;
-    private UUID id_post;
     private String texto;
+
+    @ManyToOne
+    @JoinColumn(name = "id_post", referencedColumnName = "id_post")
+    private PostModel post;
+
+    @ManyToOne
+    @JoinColumn(name = "id_usuario", referencedColumnName = "id_usuario")
+    private UsuarioModel usuario;
 }

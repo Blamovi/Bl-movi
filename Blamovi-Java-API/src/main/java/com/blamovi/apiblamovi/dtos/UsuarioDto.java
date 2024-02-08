@@ -1,21 +1,16 @@
-package com.blamovi.apiblamovi.dtos;
+package com.blamovi.apiBlamovi.dtos;
 
-import jakarta.validation.constraints.Email;
 import jakarta.validation.constraints.NotBlank;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.util.Date;
+
 public record UsuarioDto(
+        @NotBlank String nome,
+        @NotBlank String email,
+        @NotBlank String senha,
+        @NotBlank String apelido,
+        Date data_nasc,
+        MultipartFile imagem
 
-    @NotBlank String nome,
-    @NotBlank @Email(message = "O email deve estar em um formato válido!") String email,
-
-    @NotBlank String senha,
-
-    @NotBlank String apelido,
-
-    @NotBlank String dataNasc,
-
-    MultipartFile img
-){
-
-}
+) {}

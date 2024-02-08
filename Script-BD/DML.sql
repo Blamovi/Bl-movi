@@ -1,76 +1,110 @@
-USE bd_Blamovi;
+create database bd_blamovi;
 
-/*INSERT INTO tb_techs VALUES (UUID_TO_BIN(UUID()), "html");
-INSERT INTO tb_techs VALUES (UUID_TO_BIN(UUID()), "css");*/
+use bd_blamovi;
 
-/*INSERT INTO tb_techs VALUES
-	(UUID_TO_BIN(UUID()), "html"),
-    (UUID_TO_BIN(UUID()), "css");*/
-    
-SELECT BIN_TO_UUID(id_tech), nome FROM tb_techs;
-
-INSERT INTO tb_usuarios VALUES(
-	UUID_TO_BIN(UUID()),
-    "Odirlei",
-    "odirlei@email.com",
-    "senai",
-    "Odin01"
+create table usuario(
+    id_usuario binary(16) not null,
+    nome varchar(255) not null,
+    email varchar(180) not null,
+    senha varchar(30)  not null,
+    apelido varchar(30) not null,
+    data_nasc date not null,
+    url_img varchar(255) not null,
+    primary key (id_usuario)
 );
 
-SELECT * FROM tb_usuarios;
+create table video(
+    id_video binary(16) not null,
+    titulo varchar(100) not null,
+    genero varchar(50) not null,
+    diretor varchar(255) not null,
+    duracao varchar(30) not null,
+    temporadas int,
+    sinopse varchar(255) not null,
+    ano varchar(4) not null,
+    curtida int,
+    elenco varchar(255) not null,
+    tipo varchar(20) not null,
+    poster varchar(100) not null,
+    trailer varchar(255) not null,
+    classificacao varchar(30) not null,
+    nota_total decimal not null, 
+    quantidade_post decimal not null,
+    primary key (id_video)
+);
 
-SELECT BIN_TO_UUID(id_usuario), nome FROM tb_usuarios;
-/*SELECT BIN_TO_UUID(id_tech), nome FROM tb_techs;*/
+create table post(
+    id_post binary(16) not null,
+    id_video binary(16) not null,
+    id_usuario binary(16) not null,
+    quantidade_curtida int,
+    texto varchar(255) not null,
+    foto_post varchar(255),
+    primary key(id_post),
+    foreign key(id_video) references video(id_video),
+    foreign key(id_usuario) references usuario(id_usuario)
+);
 
+create table comentario(
+    id_comentario binary(16) not null,
+    id_usuario binary(16) not null,
+    id_post binary(16) not null,
+    texto varchar(255) not null,
+    primary key (id_comentario),
+    foreign key (id_usuario) references usuario(id_usuario),
+    foreign key (id_post) references post(id_post)
+);
 
-/*DELETE FROM tb_usuarios WHERE id_usuario = UUID_TO_BIN("cdb42874-6edc-11ee-8397-a4bb6d746e70");
-
-UPDATE tb_usuarios 
-SET tipo_usuario = 1
-WHERE id_usuario = UUID_TO_BIN("3995dca8-6ed9-11ee-8397-a4bb6d746e70");
-
-INSERT INTO tb_dev_tech VALUES(UUID_TO_BIN("d17053bd-6edc-11ee-8397-a4bb6d746e70"), UUID_TO_BIN("2c1533dc-6ed8-11ee-8397-a4bb6d746e70"));
-INSERT INTO tb_dev_tech VALUES(UUID_TO_BIN("d17053bd-6edc-11ee-8397-a4bb6d746e70"), UUID_TO_BIN("f27ac791-6ed7-11ee-8397-a4bb6d746e70"));*/
-
-/*PADRAO CADASTRO VIDEOS PORRAA !!!!!*/
-INSERT INTO tb_video VALUES
-    (UUID_TO_BIN(UUID()), 
-    "Duro de Matar 7", 
-    "Ficção",
-    "Zé nínguém", 
-    "130 min",
-    "",
-    "Conta a história de um cabra que não morre de jeito nenhum(vaso ruím não quebra.", 
-    "2050",
-    "",
+insert into video values(
+    UUID_TO_BIN(UUID()),
+    "titulo teste",
+    "genero1, genero2",
+    "diretor",
+    "duracao",
+    null,
+    "sinopse",
+    "2000",
+    null,
     "elenco",
-    "filme/-",
-    "post",
-    "trailer",
-    "+14",
-    0,
-    0
-    ),
-     
-    
-    
-    
-    (UUID_TO_BIN(UUID()), "Duro de Matar 8", "Conta a história de um cabra que não morre de jeito nenhum(vaso ruím não quebra.", "Zé nínguém", "Ficção", "130 min","sem temporadas","2052"),
-    (UUID_TO_BIN(UUID()), "Duro de Matar 9", "Conta a história de um cabra que não morre de jeito nenhum(vaso ruím não quebra.", "Zé nínguém", "Ficção", "130 min","sem temporadas","2050"),
-SELECT BIN_TO_UUID(id_video), titulo,sinopse,duracao, genero FROM tb_video;
+    "filme",
+    "imagem do filme",
+    "link do treiler",
+    "classificacao",
+    100,
+    10
+);
+
+insert into usuario values(
+    UUID_TO_BIN(UUID()),
+    "Abreu",
+    "abreu@gemail.com",
+    "abreu",
+    "abreu",
+    "2000-01-01",
+    "caminho imagem usuario"
+);
+
+insert into post values(
+    UUID_TO_BIN(UUID()),
+    UUID_TO_BIN("a3ca717c-c6b5-11ee-8243-a4bb6d746e70"),
+    UUID_TO_BIN("a65614f8-c6b5-11ee-8243-a4bb6d746e70"),
+    null,
+    "testo do post",
+    "imagem do post"
+);
+
+insert into comentario values(
+    UUID_TO_BIN(UUID()),
+    UUID_TO_BIN("a65614f8-c6b5-11ee-8243-a4bb6d746e70"),
+    UUID_TO_BIN("c69ab718-c6b5-11ee-8243-a4bb6d746e70"),
+    "texto do comentario"
+);
 
 
-INSERT INTO tb_comentarios VALUES
-(UUID_TO_BIN(UUID()),"O detetive John McClane viaja para a Rússia para tentar ajudar o filho, Jack. Lá, ele descobre que o rapaz trabalha para a CIA e está tentando evitar uma guerra nuclear."),
-(UUID_TO_BIN(UUID()),"O detetive John McClane viaja para a Rússia para tentar ajudar o filho, Jack. Lá, ele descobre que o rapaz trabalha para a CIA e está tentando evitar uma guerra nuclear."),
-(UUID_TO_BIN(UUID()),"O detetive John McClane viaja para a Rússia para tentar ajudar o filho, Jack. Lá, ele descobre que o rapaz trabalha para a CIA e está tentando evitar uma guerra nuclear."),  
-SELECT BIN_TO_UUID(id_comentario), texto FROM tb_comentario;
+select BIN_TO_UUID(id_video) from video;
+select BIN_TO_UUID(id_usuario) from usuario;
+select BIN_TO_UUID(id_post) from post;
+select BIN_TO_UUID(id_comentario) from comentario;
 
-/*post*/
-INSERT INTO tb_post VALUES
-(UUID_TO_BIN(UUID()),"O detetive John McClane viaja para a Rússia para tentar ajudar o filho, Jack. Lá, ele descobre que o rapaz trabalha para a CIA e está tentando evitar uma guerra nuclear.","ISSO SUSBSTITUI A FOTO"),
-(UUID_TO_BIN(UUID()),"O detetive John McClane viaja para a Rússia para tentar ajudar o filho, Jack. Lá, ele descobre que o rapaz trabalha para a CIA e está tentando evitar uma guerra nuclear.","ISSO SUSBSTITUI A FOTO"),
-(UUID_TO_BIN(UUID()),"O detetive John McClane viaja para a Rússia para tentar ajudar o filho, Jack. Lá, ele descobre que o rapaz trabalha para a CIA e está tentando evitar uma guerra nuclear.","ISSO SUSBSTITUI A FOTO"),
-SELECT BIN_TO_UUID(id_post), texto, foto FROM tb_post;
-/* fim post*/
-
+select * from usuario;
+select * from post;
