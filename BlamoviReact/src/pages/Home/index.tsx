@@ -32,22 +32,22 @@ function Home() {
         { id: '1', image: '../src/assets/img/banner/Frame 73.svg' },
         { id: '2', image: '../src/assets/img/banner/Frame 65.svg' },
         { id: '3', image: '../src/assets/img/banner/Frame 64.svg' },
-    ] 
+    ]
 
     // const [topMovies, setTopMovies] = useState ([]);
-    
+
     // const getTopRatedMovies = async (url) => {
     //     const res = await fetch(url);
     //     const data = await res.json();
 
     //     console.log(data);
     // }
-    
+
     // useEffect(() =>{
     //     const topRatedURL = `${moviesURL}top_rated?${apiKey}`;
 
     //     getTopRatedMovies(topRatedURL);
-        
+
     // })
 
     const listaFilmes: any[] = [
@@ -213,7 +213,7 @@ function Home() {
                     usuario: "ivo-cobra8"
                 }
             ]
-        }  
+        }
 
 
     ]
@@ -278,7 +278,7 @@ function Home() {
                 }
             ]
         },
-        
+
         {
             id: 4,
             titulo: "Mandalorian",
@@ -320,7 +320,7 @@ function Home() {
                 }
             ]
         },
-        
+
         {
             id: 2,
             titulo: "Rambo II: A Missão",
@@ -340,7 +340,7 @@ function Home() {
                 }
             ]
         },
-        
+
         {
             id: 3,
             titulo: "Rambo III",
@@ -360,7 +360,7 @@ function Home() {
                 }
             ]
         },
-        
+
         {
             id: 4,
             titulo: "Rambo IV",
@@ -389,7 +389,7 @@ function Home() {
             titulo2: "Homem-Aranha: Através do Aranhaverso",
             img: "src/assets/img/filmes-f/image84.png",
             link: "https://www.youtube.com/watch?v=_4is7I_ZxTg&pp=ygUtdHJhaWxlciBob21lbSBhcmFuaGEgYXRyYXbDqXMgZG8gYXJhbmhhdmVyc28g",
-            
+
         },
 
         {
@@ -398,7 +398,7 @@ function Home() {
             titulo2: "Transformers: O Despertar das Feras",
             img: "src/assets/img/filmes-f/image 83.png",
             link: "https://www.youtube.com/watch?v=PHC412-pCoQ&pp=ygUrdHJhaWxlciBUcmFuc2Zvcm1lcnM6IE8gRGVzcGVydGFyIGRhcyBGZXJhcw%3D%3D",
-            
+
         },
 
         {
@@ -407,7 +407,7 @@ function Home() {
             titulo2: "The Flash",
             img: "src/assets/img/filmes-f/image 85.png",
             link: "https://www.youtube.com/watch?v=xMbg-ZsFCCo&pp=ygURdHJhaWxlciBUaGUgRmxhc2g%3D",
-            
+
         },
 
         {
@@ -416,7 +416,7 @@ function Home() {
             titulo2: "O Demônio dos Mares",
             img: "src/assets/img/filmes-f/blackdemon.png",
             link: "https://www.youtube.com/watch?v=yX-pvjO4N3o&pp=ygUUTyBERU3DlE5JTyBET1MgTUFSRVM%3DD",
-            
+
         }
     ]
 
@@ -424,26 +424,25 @@ function Home() {
     return (
         <>
             <main id="main_home">
-                
-            <Swiper
-                slidesPerView={1}
-                pagination={{ clickable: true }}
-                navigation
-                autoplay={{
-                    delay: 5000,
-                    disableOnInteraction: false,
-                  }}
-            >
-                {data.map((item) => (
-                    <SwiperSlide key={item.id}>
-                        <img
-                            src={item.image}
-                            alt="Silder"
-                            className="slider-item"
-                        />
-                    </SwiperSlide>
-                ))}
-            </Swiper>
+                <Swiper
+                    slidesPerView={1}
+                    pagination={{ clickable: true }}
+                    navigation
+                    autoplay={{
+                        delay: 5000,
+                        disableOnInteraction: false,
+                    }}
+                >
+                    {data.map((item) => (
+                        <SwiperSlide key={item.id}>
+                            <img
+                                src={item.image}
+                                alt="Silder"
+                                className="slider-item"
+                            />
+                        </SwiperSlide>
+                    ))}
+                </Swiper>
 
                 <section className="destaque">
                     <div className="destaque_conteudo">
@@ -464,6 +463,7 @@ function Home() {
                         </div>
                     </div>
                 </section>
+
                 <section className="comentarios">
                     <div className="container">
                         <div className="container_conteudo">
@@ -493,11 +493,32 @@ function Home() {
                         </div>
                     </div>
                 </section>
+
                 <section className="Filmes_Destaques">
                     <h2>⭐ Filmes Favoritos</h2>
-                    <div  className="card-linha">
-                        <img src={imgSetaEsquerda} alt=""/>
-                        {
+                    <div className="card-linha">
+                        <Swiper
+                            slidesPerView={3}
+                            pagination={{ clickable: true }}
+                            navigation
+                            dyminac
+
+                        >
+                            {listaFilmes.map((card: any) =>(
+                                <SwiperSlide key={card.id}>
+                                    <Card
+                                    img={card.img}
+                                    titulo={card.titulo}
+                                    foto={card.img}
+                                    imgStream={card.imgStream}
+                                    nota={card.nota}
+                                    comentarios={card.comentarios}
+                                />
+                                </SwiperSlide>
+                            ))}                               
+                        </Swiper>
+
+                        {/* {
                             listaFilmes.map((card: any) => {
                                 return<div key={card.id
                                 }>
@@ -510,105 +531,132 @@ function Home() {
                                     comentarios={card.comentarios}
                                 /></div>
                             })
-                        }
-                        <img src={imgSetaDireita} alt=""/>
+                        } */}
+                        {/* <img src={imgSetaDireita} alt=""/> */}
                     </div>
                 </section>
+
                 <section className="Clássicos">
                     <h2>🎭 Clássicos</h2>
                     <div className="card-linha">
-                            <img
-                                src={imgSetaEsquerda} alt=""
-                            />
-                                {
-                                    listarFilmesClassicos.map((card: any) => {
-                                        return<div key={card.id
-                                        }>
-                                        <Card
-                                            img={card.img}
-                                            titulo={card.titulo}
-                                            foto={card.img}
-                                            imgStream={card.imgStream}
-                                            nota={card.nota}
-                                            comentarios={card.comentarios}
-                                        /></div>
-                                    })
 
-                                }
-                            <img src={imgSetaDireita} alt="" />
-                        </div>
+                    <Swiper
+                            slidesPerView={3}
+                            pagination={{ clickable: true }}
+                            navigation
+                        >
+                            {listarFilmesClassicos.map((card: any) =>(
+                                <SwiperSlide key={card.id}>
+                                    <Card
+                                    img={card.img}
+                                    titulo={card.titulo}
+                                    foto={card.img}
+                                    imgStream={card.imgStream}
+                                    nota={card.nota}
+                                    comentarios={card.comentarios}
+                                />
+                                </SwiperSlide>
+                            ))}                               
+                        </Swiper>
+
+
+
+                        {/* <img
+                            src={imgSetaEsquerda} alt=""
+                        />
+                        {
+                            listarFilmesClassicos.map((card: any) => {
+                                return <div key={card.id
+                                }>
+                                    <Card
+                                        img={card.img}
+                                        titulo={card.titulo}
+                                        foto={card.img}
+                                        imgStream={card.imgStream}
+                                        nota={card.nota}
+                                        comentarios={card.comentarios}
+                                    /></div>
+                            })
+
+                        }
+                        <img src={imgSetaDireita} alt="" /> */}
+                    </div>
                 </section>
+
                 <section className="Melhores_series">
                     <h2>🏆 Melhores series</h2>
                     <div className="card-linha">
                         <img src={imgSetaEsquerda} alt="" />
                         {
                             listarSeries.map((card: any) => {
-                                return<div key={card.id
+                                return <div key={card.id
                                 }>
-                                <Card
-                                    img={card.img}
-                                    titulo={card.titulo}
-                                    foto={card.img}
-                                    imgStream={card.imgStream}
-                                    nota={card.nota}
-                                    comentarios={card.comentarios}
-                                /></div>
+                                    <Card
+                                        img={card.img}
+                                        titulo={card.titulo}
+                                        foto={card.img}
+                                        imgStream={card.imgStream}
+                                        nota={card.nota}
+                                        comentarios={card.comentarios}
+                                    /></div>
                             })
 
                         }
                         <img src={imgSetaDireita} alt="" />
                     </div>
                 </section>
+
                 <section className="Para_maratonar">
                     <h2>🏃 Para Maratonar</h2>
                     <div className="card-linha">
                         <img src={imgSetaEsquerda} alt="" />
                         {
                             listarMaratonas.map((card: any) => {
-                                return<div key={card.id
+                                return <div key={card.id
                                 }>
-                                <Card                                
-                                    img={card.img}
-                                    titulo={card.titulo}
-                                    foto={card.img}
-                                    imgStream={card.imgStream}
-                                    nota={card.nota}
-                                    comentarios={card.comentarios}
-                                /></div>
+                                    <Card
+                                        img={card.img}
+                                        titulo={card.titulo}
+                                        foto={card.img}
+                                        imgStream={card.imgStream}
+                                        nota={card.nota}
+                                        comentarios={card.comentarios}
+                                    /></div>
                             })
                         }
                         <img src={imgSetaDireita} alt="" />
                     </div>
                 </section>
+
                 <section className="Lancamentos">
                     <h2>📅 Lançamentos</h2>
                     <div className="card-linha">
-                        <img src={imgSetaEsquerda} alt="" /> 
+                        <img src={imgSetaEsquerda} alt="" />
                         <div className="card_responsivo">
-                        {
-                            listarLancamentos.map((cardLancamentos: any) => {
-                                return<div key={cardLancamentos.id
-                                }>
-                                <CardLancamentos
-                                    id={cardLancamentos.id}
-                                    titulo={cardLancamentos.titulo}
-                                    img={cardLancamentos.img}
-                                    titulo2={cardLancamentos.titulo2}
-                                    foto={cardLancamentos.img}
-                                    link={cardLancamentos.link}
-                                    
-                                />
-                                </div>
-                            })
-                        }
-                        </div>                       
-                        
-                        
+                            {
+                                listarLancamentos.map((cardLancamentos: any) => {
+                                    return <div key={cardLancamentos.id
+                                    }>
+                                        <CardLancamentos
+                                            id={cardLancamentos.id}
+                                            titulo={cardLancamentos.titulo}
+                                            img={cardLancamentos.img}
+                                            titulo2={cardLancamentos.titulo2}
+                                            foto={cardLancamentos.img}
+                                            link={cardLancamentos.link}
+
+                                        />
+                                    </div>
+                                })
+                            }
+                        </div>
+
+
                         <img src={imgSetaDireita} alt="" />
                     </div>
                     <Link className="input-submit" to="/calendario">+ Lançamentos</Link>
                 </section>
+
             </main>
 
 
