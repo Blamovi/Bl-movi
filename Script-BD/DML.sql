@@ -1,4 +1,9 @@
+
+drop database bd_blamovi;
+
 create database bd_blamovi;
+
+
 
 use bd_blamovi;
 

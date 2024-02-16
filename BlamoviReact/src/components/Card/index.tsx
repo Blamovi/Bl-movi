@@ -45,9 +45,9 @@ function Card(props: any) {
             <img src={props.img} alt="src/pages/filmesInfomacoes/index.tsx" />
             <h3>{props.titulo}</h3>
             <div className="itens">
-                <div className="streams">
+                {/* <div className="streams">
                     <img src={props.imgStream} alt="" />
-                </div>
+                </div> */}
                 <div className="icones">
                     <img src={imgIconesTrofeu} alt="" />
                     <span>{props.nota}</span>

@@ -128,16 +128,21 @@ h3 {
 
 
 /* SWIPER */
-.swiper-slide {
+.swipercard {
+    max-width: 1240px;
+    width: 100%;
+}
+.swiper-slide-card {
     width: 220px!important;
+    padding: 90px;
 }
 
-.swiper-wrapper {
+.swipercard>.swiper-wrapper {
     gap: 50px;
 }
 
 .swiper-button-next:after {
-    margin-left: 150px;
+    /* margin-left: 150px; */
     z-index: 10;
 }
 
