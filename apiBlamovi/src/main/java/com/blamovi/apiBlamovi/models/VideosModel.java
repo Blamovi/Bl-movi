@@ -24,6 +24,7 @@ public class VideosModel implements Serializable {
     private String titulo;
     private String genero;
     private String diretor;
+    private String duracao;
     private Integer temporadas;
     private String sinopse;
     private String ano;
